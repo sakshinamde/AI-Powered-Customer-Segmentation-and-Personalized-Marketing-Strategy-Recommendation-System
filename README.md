@@ -19,13 +19,14 @@ The frontend defaults to `http://localhost:8000`; override it with `VITE_API_BAS
 Set the Vercel project Root Directory to the repository root (`.`), where both
 `package.json` and `requirements.txt` live. `vercel.json` builds the Vite
 frontend into `dist` and routes `/api/*` to the FastAPI function in
-`api/index.py`; `.python-version` selects Python 3.12 for that function.
+`api/index.py`; `.python-version` (and `backend/.python-version`) selects Python 3.12.
 
 Configure `DATABASE_URL` and a strong `SECRET_KEY` in Vercel's environment
-variables. For PostgreSQL with the pinned Psycopg 3 driver, use a SQLAlchemy URL
-with the `postgresql+psycopg://` scheme. Do not commit environment files or
-credentials. The frontend uses same-origin `/api` requests in production; set
-`VITE_API_BASE_URL` only if the API is hosted on a different origin.
+variables. Both `psycopg[binary]==3.2.1` (for `postgresql+psycopg://`) and
+`psycopg2-binary==2.9.9` (for standard `postgresql://`) are supported and pinned
+for Python 3.12. Do not commit environment files or credentials. The frontend
+uses same-origin `/api` requests in production; set `VITE_API_BASE_URL` only if
+the API is hosted on a different origin.
 
 ## Docker Compose
 
