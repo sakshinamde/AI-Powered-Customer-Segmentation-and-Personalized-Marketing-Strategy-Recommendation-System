@@ -3,6 +3,7 @@
 
 # Explicitly ensure configuration and version files use LF line endings
 .python-version text eol=lf
+api/.python-version text eol=lf
 backend/.python-version text eol=lf
 *.toml text eol=lf
 *.sh text eol=lf
