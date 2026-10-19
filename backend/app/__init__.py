@@ -1,0 +1,1 @@
+"""SmartSeg AI backend package."""

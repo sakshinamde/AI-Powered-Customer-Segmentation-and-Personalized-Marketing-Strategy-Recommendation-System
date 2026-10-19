@@ -1,0 +1,6 @@
+{
+  "name": "SmartSeg AI",
+  "description": "Customer Segmentation & Intelligence Platform with multi-model clustering (K-Means, DBSCAN, Hierarchical, PCA), XAI explanations, and strategy management.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

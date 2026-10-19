@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.venv/
+.venv312/
+.venv38/
+.pytest_cache/
+__pycache__/
+*.pyc
+*.db
+.env
+.git/
+.gitignore
+README.md
+smartseg_test.db
