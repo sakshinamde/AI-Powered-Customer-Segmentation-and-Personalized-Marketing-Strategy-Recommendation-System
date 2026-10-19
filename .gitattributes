@@ -1,0 +1,8 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Explicitly ensure configuration and version files use LF line endings
+.python-version text eol=lf
+backend/.python-version text eol=lf
+*.toml text eol=lf
+*.sh text eol=lf
